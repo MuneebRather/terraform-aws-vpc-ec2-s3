@@ -44,3 +44,15 @@ variable "my_ip_cidr" {
   description = "My public IP in CIDR format, allowed to SSH into the instance"
   type        = string
 }
+
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t3.micro"
+}
+
+variable "public_key_path" {
+  description = "Path to the public SSH key uploaded to AWS"
+  type        = string
+  default     = "~/.ssh/tf-demo-key.pub"
+}
