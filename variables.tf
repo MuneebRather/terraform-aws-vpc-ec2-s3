@@ -39,3 +39,8 @@ variable "az_2" {
   type        = string
   default     = "ap-south-1b"
 }
+
+variable "my_ip_cidr" {
+  description = "My public IP in CIDR format, allowed to SSH into the instance"
+  type        = string
+}
